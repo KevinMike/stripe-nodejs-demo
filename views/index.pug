@@ -1,0 +1,13 @@
+html
+  body
+    form(action="/api/charge", method="post")
+      article
+        label Amount: $5.00
+      script(
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_G9Asdyc8SzW7ye6xCiCDmPjn"
+        data-amount="500"
+        data-name="Demo Site"
+        data-description="Example charge"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto")
